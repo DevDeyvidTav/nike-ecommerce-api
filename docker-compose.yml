@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  api-nike-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRESQL_USERNAME: api-nike
+      POSTGRESQL_PASSWORD: api-nike
+      POSTGRESQL_DATABASE: nike-ecommerce
+      
